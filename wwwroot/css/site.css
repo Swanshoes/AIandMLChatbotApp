@@ -20,3 +20,66 @@ html {
 body {
   margin-bottom: 60px;
 }
+#chatWindow {
+    max-height: 400px;
+    overflow-y: auto;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    padding: 10px;
+    background-color: #fafafa;
+    margin-top: 10px;
+    font-family: Arial, sans-serif;
+}
+
+.user-message, .bot-message {
+    padding: 10px 15px;
+    margin: 8px 0;
+    border-radius: 20px;
+    max-width: 80%;
+    word-wrap: break-word;
+    display: inline-block;
+    clear: both;
+}
+
+.user-message {
+    background-color: #007bff;
+    color: white;
+    float: right;
+    text-align: right;
+}
+
+.bot-message {
+    background-color: #e9ecef;
+    color: #333;
+    float: left;
+    text-align: left;
+}
+
+    .bot-message.error {
+        background-color: #ffdddd;
+        color: #a33;
+    }
+
+#userInput {
+    width: calc(100% - 90px);
+    padding: 10px;
+    margin-top: 10px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+}
+
+#sendBtn {
+    width: 70px;
+    margin-top: 10px;
+    padding: 10px;
+    background-color: #007bff;
+    border: none;
+    color: white;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+    #sendBtn:hover {
+        background-color: #0056b3;
+    }
+
