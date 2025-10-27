@@ -1,6 +1,8 @@
 ﻿using Microsoft.AspNetCore.Mvc;
 using AIandMLChatbotApp.Models;
 using System.Text.Json;
+using System.Collections.Generic;
+using System.Linq;
 
 namespace AIandMLChatbotApp.Controllers
 {
@@ -28,5 +30,9 @@ namespace AIandMLChatbotApp.Controllers
             }
         }
         
+        public IActionResult Index()
+        {
+            return View();
+        }
     }
 }
