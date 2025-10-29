@@ -9,10 +9,14 @@
         });
 
         if (!response.ok) throw new Error('Network response was not ok.');
-
+        console.log(response);
         const data = await response.json();
+        console.log('data', data);
         $('#chatWindow').append(`<div class="user-message">${userInput}</div>`);
-        $('#chatWindow').append(`<div class="bot-message">${data.answer}</div>`);
+        $('#chatWindow').append(`<div class="bot-message">
+        ${data.answer} <br />
+        Confidence: ${(data.confidence * 100).toFixed(2)}%
+    </div>`);
 
     } catch (error) {
         $('#chatWindow').append(`<div class="bot-message error">Error: ${error.message}</div>`);
