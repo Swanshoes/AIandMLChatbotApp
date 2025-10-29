@@ -23,9 +23,8 @@ namespace AIandMLChatbotApp.Models
     }
     public class ChatModelTrainer
     {
-        private static string dataPath = Path.Combine( "App_Data", "trainingData.csv");
 
-        public static void TrainModel()
+        public static void TrainModel(string csvPath = null)
         {
             var mlContext = new MLContext();
 
@@ -34,6 +33,7 @@ namespace AIandMLChatbotApp.Models
                 Directory.CreateDirectory(folder);
 
             string modelPath = Path.Combine(folder, "chatbotModel.zip");
+            string dataPath = Path.Combine(folder, "trainingData.csv");
 
 
             var data = mlContext.Data.LoadFromTextFile<ChatData>(

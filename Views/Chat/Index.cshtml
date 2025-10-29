@@ -13,9 +13,12 @@
     <hr />
 
     <h3>Upload Training Data</h3>
-    <input type="file" id="fileUpload" accept=".csv, .xlsx"/>
-    <button id="uploadBTN">Upload</button>
+    <form id="uploadForm" enctype="multipart/form/data">
+        <input type="file" id="fileUpload" accept=".csv, .xlsx"/>
+        <button id="uploadBTN">Upload and Retrain</button>
+    </form>
 
+    <div id="uploadStatus"></div>
 </div>
 
 <script src="~/js/chat.js"></script>
