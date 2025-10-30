@@ -34,7 +34,15 @@ namespace AIandMLChatbotApp.Models
 
             string modelPath = Path.Combine(folder, "chatbotModel.zip");
             string dataPath = Path.Combine(folder, "trainingData.csv");
+            string backupPath = Path.Combine(folder, "chatbotModel_backup.zip");
 
+
+            if (File.Exists(modelPath))
+            {
+                if (File.Exists(backupPath))
+                    File.Delete(backupPath);
+                File.Copy(modelPath, backupPath);
+            }
 
             var data = mlContext.Data.LoadFromTextFile<ChatData>(
                 path: dataPath,
@@ -63,6 +71,9 @@ namespace AIandMLChatbotApp.Models
 
             mlContext.Model.Save(model, split.TrainSet.Schema, modelPath);
             System.Console.WriteLine("Model saved to " + modelPath);
+
+            if (File.Exists(backupPath))
+                File.Delete(backupPath);
         }
 
         public static ChatResponse Predict(string question)

@@ -1,0 +1,100 @@
+Question,Answer
+What is artificial intelligence?,Artificial intelligence is the ability of machines to perform tasks that normally require human intelligence.
+What is AI?,AI stands for artificial intelligence, which enables computers to think and learn like humans.
+What is machine learning?,Machine learning is a field of AI that allows systems to learn from data without being explicitly programmed.
+What is ML?,ML stands for machine learning, which uses algorithms to find patterns in data.
+What is deep learning?,Deep learning is a subset of machine learning that uses neural networks with many layers to process data.
+What is a neural network?,A neural network is a model inspired by the human brain that processes data through layers of nodes.
+What is supervised learning?,Supervised learning is when models are trained on labeled data with known outputs.
+What is unsupervised learning?,Unsupervised learning finds patterns in unlabeled data without known outputs.
+What is reinforcement learning?,Reinforcement learning is when an agent learns by receiving rewards or penalties for actions.
+What is a dataset?,A dataset is a collection of data used for training and testing models.
+What is training data?,Training data is the data used to teach a machine learning model.
+What is test data?,Test data is used to evaluate how well a model performs on unseen data.
+What is validation data?,Validation data helps tune model parameters during training.
+What is a model?,A model is a mathematical representation that makes predictions based on input data.
+What is model training?,Model training is the process of teaching a model using data.
+What is prediction?,Prediction is when a model outputs a result based on input data.
+What is an algorithm?,An algorithm is a set of rules or steps a computer follows to solve a problem.
+What is regression?,Regression is a technique used to predict numeric values.
+What is classification?,Classification assigns inputs into predefined categories or classes.
+What is clustering?,Clustering groups similar data points together without labels.
+What is linear regression?,Linear regression models the relationship between variables using a straight line.
+What is logistic regression?,Logistic regression predicts categorical outcomes using a logistic function.
+What is accuracy?,Accuracy is the percentage of correct predictions made by a model.
+What is precision?,Precision is how many of the predicted positives were actually correct.
+What is recall?,Recall measures how many of the actual positives were correctly identified.
+What is F1 score?,F1 score combines precision and recall into one metric.
+What is overfitting?,Overfitting is when a model learns noise in the training data and performs poorly on new data.
+What is underfitting?,Underfitting is when a model is too simple and fails to learn from data.
+What is cross validation?,Cross validation splits data into parts to train and test multiple times for better evaluation.
+What is feature engineering?,Feature engineering is creating and selecting useful variables for model training.
+What is normalization?,Normalization scales data so that all values are within a similar range.
+What is standardization?,Standardization transforms data to have zero mean and unit variance.
+What is data preprocessing?,Data preprocessing cleans and prepares raw data for training.
+What is data cleaning?,Data cleaning removes errors or inconsistencies from the dataset.
+What is dimensionality reduction?,Dimensionality reduction reduces the number of features in data while keeping useful information.
+What is PCA?,PCA or principal component analysis reduces data dimensions by keeping the most important features.
+What is a confusion matrix?,A confusion matrix shows model predictions compared to actual results.
+What is supervised vs unsupervised learning?,Supervised uses labeled data, unsupervised uses unlabeled data.
+What is a label?,A label is the output value or category in a dataset.
+What is a feature?,A feature is an input variable used by a model for prediction.
+What is bias in machine learning?,Bias is an error caused by simplifying assumptions in the learning algorithm.
+What is variance in ML?,Variance is the model's sensitivity to small changes in the training data.
+What is the bias variance tradeoff?,It is the balance between underfitting and overfitting.
+What is gradient descent?,Gradient descent is an optimization algorithm that minimizes error by adjusting model parameters.
+What is a loss function?,A loss function measures how far predictions are from the actual values.
+What is optimization?,Optimization adjusts model parameters to minimize loss.
+What is stochastic gradient descent?,It is a gradient descent method using one or few samples per step for faster updates.
+What is a decision tree?,A decision tree splits data into branches based on feature values to make decisions.
+What is a random forest?,A random forest is an ensemble of decision trees that improves accuracy.
+What is ensemble learning?,Ensemble learning combines multiple models to improve performance.
+What is bagging?,Bagging trains models on random subsets of data to reduce variance.
+What is boosting?,Boosting trains models sequentially to correct previous errors.
+What is an SVM?,SVM or support vector machine is an algorithm that separates classes using the best boundary.
+What is KNN?,KNN or k-nearest neighbors predicts based on the closest data points.
+What is k-means?,K-means is a clustering algorithm that groups data into k clusters.
+What is NLP?,NLP or natural language processing helps computers understand and process human language.
+What is a token?,A token is a single unit of text like a word or symbol.
+What is a vector?,A vector is a numerical representation of data used by models.
+What is word embedding?,Word embedding represents words as dense vectors in a continuous space.
+What is a pipeline?,A pipeline connects multiple ML steps such as data processing and training.
+What is ML.NET?,ML.NET is Microsoft’s open-source machine learning framework for .NET developers.
+What is a PredictionEngine?,PredictionEngine is an ML.NET class that makes single predictions from trained models.
+What is IDataView?,IDataView is ML.NET’s data format for handling datasets.
+What is a model builder?,Model Builder is a visual tool in Visual Studio for creating ML.NET models.
+What is AutoML?,AutoML automatically finds the best model and parameters for your data.
+What is a trainer in ML.NET?,A trainer is the algorithm used to train the model.
+What is a transformer in ML.NET?,A transformer applies a data transformation or a trained model to input data.
+What is FeaturizeText in ML.NET?,FeaturizeText converts text into numerical features for training.
+What is SDCA?,SDCA is a stochastic dual coordinate ascent algorithm used for training linear models.
+What is FastTree?,FastTree is an ML.NET algorithm for gradient boosted decision trees.
+What is evaluation in ML?,Evaluation measures how well a trained model performs.
+What is a confusion matrix in ML.NET?,It is a table that shows correct and incorrect predictions made by the model.
+What is a pipeline in ML.NET?,A pipeline defines the sequence of transformations and trainers for building a model.
+What is sentiment analysis?,Sentiment analysis detects emotions or opinions in text.
+What is text classification?,Text classification categorizes text into predefined labels.
+What is anomaly detection?,Anomaly detection identifies unusual or rare data points.
+What is image classification?,Image classification categorizes images into different classes.
+What is object detection?,Object detection locates and identifies objects within images.
+What is time series forecasting?,Time series forecasting predicts future values based on past data.
+What is recommendation system?,A recommendation system suggests items to users based on preferences.
+What is collaborative filtering?,Collaborative filtering recommends items based on user or item similarity.
+What is content based filtering?,Content-based filtering recommends items similar to those a user liked before.
+What is data splitting?,Data splitting divides data into training, validation, and test sets.
+What is model evaluation?,Model evaluation measures how well the model performs using metrics.
+What is prediction confidence?,Prediction confidence shows how sure the model is about its prediction.
+What is transfer learning?,Transfer learning uses knowledge from one task to improve another.
+What is feature selection?,Feature selection chooses the most important inputs for training.
+What is one hot encoding?,One hot encoding converts categories into binary numeric values.
+What is label encoding?,Label encoding assigns numbers to categorical values.
+What is min-max scaling?,Min-max scaling scales features to a 0-1 range.
+What is data normalization?,Data normalization adjusts values to a common scale for better model performance.
+What is training pipeline?,A training pipeline defines the steps for preprocessing and learning from data.
+What is testing pipeline?,A testing pipeline applies the trained model to evaluate new data.
+What is model persistence?,Model persistence saves and loads trained models for later use.
+What is model deployment?,Model deployment makes a trained model available for use in an application.
+What is ML model prediction?,ML model prediction is generating an output based on trained data patterns.
+What is the goal of ML?,The goal of ML is to create systems that improve automatically through experience.
+What is model persistence?,Model persistence means saving a trained model to reuse it later without retraining.
+What is model deployment?,Model deployment is the process of putting a trained model into production so it can make real predictions.

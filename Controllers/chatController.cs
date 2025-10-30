@@ -13,7 +13,7 @@ namespace AIandMLChatbotApp.Controllers
         {
             string userQuestion = request.GetProperty("question").GetString();
             ChatResponse result = ChatModelTrainer.Predict(userQuestion);
-            return Json(result);  // returns both Answer and Confidence
+            return Json(result);  
         }
 
         [HttpPost]
@@ -25,18 +25,49 @@ namespace AIandMLChatbotApp.Controllers
             string folder = Path.Combine(AppDomain.CurrentDomain.BaseDirectory, "App_Data");
             if (!Directory.Exists(folder)) Directory.CreateDirectory(folder);
 
-            string filePath = Path.Combine(folder, "trainingData.csv");
+            string newFilePath = Path.Combine(folder, "trainingData_new.csv");
+            string finalFilePath = Path.Combine(folder, "trainingData.csv");
+            string backupFilePath = Path.Combine(folder, $"trainingData_backup_{DateTime.Now:yyyyMMdd_HHmmss}.csv");
 
-            using (var stream = new FileStream(filePath, FileMode.Create))
+            try
             {
-                await csvFile.CopyToAsync(stream);
+                using (var stream = new FileStream(newFilePath, FileMode.Create))
+                {
+                    await csvFile.CopyToAsync(stream);
+                }
+
+                if (System.IO.File.Exists(finalFilePath))
+                    System.IO.File.Copy(finalFilePath, backupFilePath, true);
+
+                ChatModelTrainer.TrainModel(newFilePath);
+
+                System.IO.File.Copy(newFilePath, finalFilePath, true);
+                System.IO.File.Delete(newFilePath);
+
+                return Json(new { success = true, message = "New dataset uploaded and model retrained successfully." });
             }
+            catch (Exception ex)
+            {
+                if (System.IO.File.Exists(newFilePath))
+                    System.IO.File.Delete(newFilePath);
 
-            // Optionally trigger retraining immediately
-            ChatModelTrainer.TrainModel(filePath);
+                var latestBackup = Directory.GetFiles(folder, "trainingData_backup_*.csv")
+                                            .OrderByDescending(f => f)
+                                            .FirstOrDefault();
 
-            return Json(new { success = true, message = "CSV uploaded and model retrained!" });
+                if (latestBackup != null)
+                {
+                    System.IO.File.Copy(latestBackup, finalFilePath, true);
+                }
+
+                return Json(new
+                {
+                    success = false,
+                    message = $"Training failed: {ex.Message}. Restored last known good dataset."
+                });
+            }
         }
+
 
         public IActionResult Train()
         {

@@ -24,3 +24,35 @@
     $('#chatWindow').scrollTop($('#chatWindow')[0].scrollHeight);
     $('#userInput').val('');
 }
+
+function processCSVUpload() {
+    var fileInput = $('#fileUpload')[0];
+    if (fileInput.files.length === 0) {
+        $('#uploadStatus').text('Please select a file first.');
+        return;
+    }
+
+    var formData = new FormData();
+    formData.append('csvFile', fileInput.files[0]);
+
+    $.ajax({
+        url: '/Chat/UploadCsv', // adjust for your actual controller
+        type: 'POST',
+        data: formData,
+        processData: false, // important for FormData
+        contentType: false,
+        beforeSend: function () {
+            $('#uploadStatus').text('Uploading and retraining...');
+        },
+        success: function (response) {
+            if (response.success) {
+                $('#uploadStatus').text(response.message);
+            } else {
+                $('#uploadStatus').text('Error: ' + response.message);
+            }
+        },
+        error: function (xhr) {
+            $('#uploadStatus').text('Unexpected error: ' + xhr.responseText);
+        }
+    });
+}
