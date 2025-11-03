@@ -68,6 +68,18 @@ body {
     border: 1px solid #ccc;
 }
 
+.userInteractionDiv {
+    position: fixed;
+    bottom: 0;
+    background: #fff;
+    border-top: 1px solid #ccc;
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    width: 75%;
+}
+
 #sendBtn {
     width: 70px;
     margin-top: 10px;

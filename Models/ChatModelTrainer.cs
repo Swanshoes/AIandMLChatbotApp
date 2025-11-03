@@ -21,6 +21,13 @@ namespace AIandMLChatbotApp.Models
         public string Answer { get; set; }
         public float Confidence { get; set; }
     }
+
+    public class TransformedData
+    {
+        public float[] Features { get; set; }   // numeric vector for the question
+        public string Answer { get; set; }      // original answer from CSV
+    }
+
     public class ChatModelTrainer
     {
 
@@ -44,10 +51,20 @@ namespace AIandMLChatbotApp.Models
                 File.Copy(modelPath, backupPath);
             }
 
-            var data = mlContext.Data.LoadFromTextFile<ChatData>(
-                path: dataPath,
-                hasHeader: true,
-                separatorChar: ',');
+            var textLoaderOptions = new TextLoader.Options
+            {
+                Separators = new[] { ',' },
+                HasHeader = true,
+                AllowQuoting = true, // ✅ This is the key
+                Columns = new[]
+                {
+                    new TextLoader.Column("Question", DataKind.String, 0),
+                    new TextLoader.Column("Answer", DataKind.String, 1)
+                }
+            };
+
+            var loader = mlContext.Data.CreateTextLoader(textLoaderOptions);
+            var data = loader.Load("App_Data/trainingData.csv");
 
             var split = mlContext.Data.TrainTestSplit(data, testFraction: 0.2);
 

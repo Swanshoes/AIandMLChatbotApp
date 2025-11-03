@@ -1,100 +1,101 @@
 Question,Answer
-What is artificial intelligence?,Artificial intelligence is the ability of machines to perform tasks that normally require human intelligence.
-What is AI?,AI stands for artificial intelligence, which enables computers to think and learn like humans.
-What is machine learning?,Machine learning is a field of AI that allows systems to learn from data without being explicitly programmed.
-What is ML?,ML stands for machine learning, which uses algorithms to find patterns in data.
-What is deep learning?,Deep learning is a subset of machine learning that uses neural networks with many layers to process data.
-What is a neural network?,A neural network is a model inspired by the human brain that processes data through layers of nodes.
-What is supervised learning?,Supervised learning is when models are trained on labeled data with known outputs.
-What is unsupervised learning?,Unsupervised learning finds patterns in unlabeled data without known outputs.
-What is reinforcement learning?,Reinforcement learning is when an agent learns by receiving rewards or penalties for actions.
-What is a dataset?,A dataset is a collection of data used for training and testing models.
-What is training data?,Training data is the data used to teach a machine learning model.
-What is test data?,Test data is used to evaluate how well a model performs on unseen data.
-What is validation data?,Validation data helps tune model parameters during training.
-What is a model?,A model is a mathematical representation that makes predictions based on input data.
-What is model training?,Model training is the process of teaching a model using data.
-What is prediction?,Prediction is when a model outputs a result based on input data.
-What is an algorithm?,An algorithm is a set of rules or steps a computer follows to solve a problem.
-What is regression?,Regression is a technique used to predict numeric values.
-What is classification?,Classification assigns inputs into predefined categories or classes.
-What is clustering?,Clustering groups similar data points together without labels.
-What is linear regression?,Linear regression models the relationship between variables using a straight line.
-What is logistic regression?,Logistic regression predicts categorical outcomes using a logistic function.
-What is accuracy?,Accuracy is the percentage of correct predictions made by a model.
-What is precision?,Precision is how many of the predicted positives were actually correct.
-What is recall?,Recall measures how many of the actual positives were correctly identified.
-What is F1 score?,F1 score combines precision and recall into one metric.
-What is overfitting?,Overfitting is when a model learns noise in the training data and performs poorly on new data.
-What is underfitting?,Underfitting is when a model is too simple and fails to learn from data.
-What is cross validation?,Cross validation splits data into parts to train and test multiple times for better evaluation.
-What is feature engineering?,Feature engineering is creating and selecting useful variables for model training.
-What is normalization?,Normalization scales data so that all values are within a similar range.
-What is standardization?,Standardization transforms data to have zero mean and unit variance.
-What is data preprocessing?,Data preprocessing cleans and prepares raw data for training.
-What is data cleaning?,Data cleaning removes errors or inconsistencies from the dataset.
-What is dimensionality reduction?,Dimensionality reduction reduces the number of features in data while keeping useful information.
-What is PCA?,PCA or principal component analysis reduces data dimensions by keeping the most important features.
-What is a confusion matrix?,A confusion matrix shows model predictions compared to actual results.
-What is supervised vs unsupervised learning?,Supervised uses labeled data, unsupervised uses unlabeled data.
-What is a label?,A label is the output value or category in a dataset.
-What is a feature?,A feature is an input variable used by a model for prediction.
-What is bias in machine learning?,Bias is an error caused by simplifying assumptions in the learning algorithm.
-What is variance in ML?,Variance is the model's sensitivity to small changes in the training data.
-What is the bias variance tradeoff?,It is the balance between underfitting and overfitting.
-What is gradient descent?,Gradient descent is an optimization algorithm that minimizes error by adjusting model parameters.
-What is a loss function?,A loss function measures how far predictions are from the actual values.
-What is optimization?,Optimization adjusts model parameters to minimize loss.
-What is stochastic gradient descent?,It is a gradient descent method using one or few samples per step for faster updates.
-What is a decision tree?,A decision tree splits data into branches based on feature values to make decisions.
-What is a random forest?,A random forest is an ensemble of decision trees that improves accuracy.
-What is ensemble learning?,Ensemble learning combines multiple models to improve performance.
-What is bagging?,Bagging trains models on random subsets of data to reduce variance.
-What is boosting?,Boosting trains models sequentially to correct previous errors.
-What is an SVM?,SVM or support vector machine is an algorithm that separates classes using the best boundary.
-What is KNN?,KNN or k-nearest neighbors predicts based on the closest data points.
-What is k-means?,K-means is a clustering algorithm that groups data into k clusters.
-What is NLP?,NLP or natural language processing helps computers understand and process human language.
-What is a token?,A token is a single unit of text like a word or symbol.
-What is a vector?,A vector is a numerical representation of data used by models.
-What is word embedding?,Word embedding represents words as dense vectors in a continuous space.
-What is a pipeline?,A pipeline connects multiple ML steps such as data processing and training.
-What is ML.NET?,ML.NET is Microsoft’s open-source machine learning framework for .NET developers.
-What is a PredictionEngine?,PredictionEngine is an ML.NET class that makes single predictions from trained models.
-What is IDataView?,IDataView is ML.NET’s data format for handling datasets.
-What is a model builder?,Model Builder is a visual tool in Visual Studio for creating ML.NET models.
-What is AutoML?,AutoML automatically finds the best model and parameters for your data.
-What is a trainer in ML.NET?,A trainer is the algorithm used to train the model.
-What is a transformer in ML.NET?,A transformer applies a data transformation or a trained model to input data.
-What is FeaturizeText in ML.NET?,FeaturizeText converts text into numerical features for training.
-What is SDCA?,SDCA is a stochastic dual coordinate ascent algorithm used for training linear models.
-What is FastTree?,FastTree is an ML.NET algorithm for gradient boosted decision trees.
-What is evaluation in ML?,Evaluation measures how well a trained model performs.
-What is a confusion matrix in ML.NET?,It is a table that shows correct and incorrect predictions made by the model.
-What is a pipeline in ML.NET?,A pipeline defines the sequence of transformations and trainers for building a model.
-What is sentiment analysis?,Sentiment analysis detects emotions or opinions in text.
-What is text classification?,Text classification categorizes text into predefined labels.
-What is anomaly detection?,Anomaly detection identifies unusual or rare data points.
-What is image classification?,Image classification categorizes images into different classes.
-What is object detection?,Object detection locates and identifies objects within images.
-What is time series forecasting?,Time series forecasting predicts future values based on past data.
-What is recommendation system?,A recommendation system suggests items to users based on preferences.
-What is collaborative filtering?,Collaborative filtering recommends items based on user or item similarity.
-What is content based filtering?,Content-based filtering recommends items similar to those a user liked before.
-What is data splitting?,Data splitting divides data into training, validation, and test sets.
-What is model evaluation?,Model evaluation measures how well the model performs using metrics.
-What is prediction confidence?,Prediction confidence shows how sure the model is about its prediction.
-What is transfer learning?,Transfer learning uses knowledge from one task to improve another.
-What is feature selection?,Feature selection chooses the most important inputs for training.
-What is one hot encoding?,One hot encoding converts categories into binary numeric values.
-What is label encoding?,Label encoding assigns numbers to categorical values.
-What is min-max scaling?,Min-max scaling scales features to a 0-1 range.
-What is data normalization?,Data normalization adjusts values to a common scale for better model performance.
-What is training pipeline?,A training pipeline defines the steps for preprocessing and learning from data.
-What is testing pipeline?,A testing pipeline applies the trained model to evaluate new data.
-What is model persistence?,Model persistence saves and loads trained models for later use.
-What is model deployment?,Model deployment makes a trained model available for use in an application.
-What is ML model prediction?,ML model prediction is generating an output based on trained data patterns.
-What is the goal of ML?,The goal of ML is to create systems that improve automatically through experience.
-What is model persistence?,Model persistence means saving a trained model to reuse it later without retraining.
-What is model deployment?,Model deployment is the process of putting a trained model into production so it can make real predictions.
+"What is the first step in building an ML model?","The first step is problem definition, where you clearly identify the business problem, determine if ML is appropriate, and define success metrics."
+"How do you split data for training, validation, and testing?","Common splits are 70-15-15 or 80-10-10 for training, validation, and test sets respectively, though this varies based on dataset size."
+"What is overfitting in machine learning?","Overfitting occurs when a model learns the training data too well, including noise and outliers, resulting in poor performance on new, unseen data."
+"How can you prevent overfitting?","Prevention methods include regularization, dropout, early stopping, data augmentation, cross-validation, and reducing model complexity."
+"What is the difference between supervised and unsupervised learning?","Supervised learning uses labeled data to learn input-output mappings, while unsupervised learning finds patterns in unlabeled data without predefined outputs."
+"What is a neural network?","A neural network is a computational model inspired by biological neurons, consisting of interconnected layers of nodes that process information through weighted connections."
+"What is gradient descent?","Gradient descent is an optimization algorithm that iteratively adjusts model parameters by moving in the direction of steepest descent of the loss function."
+"What is the learning rate in ML?","The learning rate is a hyperparameter that controls the step size during gradient descent, determining how quickly or slowly a model learns."
+"What is batch normalization?","Batch normalization is a technique that normalizes layer inputs across mini-batches, stabilizing learning, allowing higher learning rates, and reducing training time."
+"What is transfer learning?","Transfer learning involves using a pre-trained model on a related task as a starting point, then fine-tuning it for your specific problem to save time and resources."
+"What is data augmentation?","Data augmentation artificially increases training data diversity by applying transformations like rotation, flipping, cropping, or noise addition to existing samples."
+"What is cross-validation?","Cross-validation is a technique that splits data into k folds, training on k-1 folds and validating on the remaining fold, rotating through all combinations."
+"What is feature engineering?","Feature engineering is the process of creating, transforming, or selecting input variables to improve model performance and capture relevant patterns in data."
+"What is dimensionality reduction?","Dimensionality reduction decreases the number of input features while preserving important information, using techniques like PCA, t-SNE, or autoencoders."
+"What is regularization in ML?","Regularization adds penalty terms to the loss function to discourage model complexity, helping prevent overfitting through techniques like L1, L2, or elastic net."
+"What is dropout in neural networks?","Dropout randomly deactivates neurons during training with a specified probability, forcing the network to learn robust features and preventing co-adaptation."
+"What is a confusion matrix?","A confusion matrix is a table showing true positives, true negatives, false positives, and false negatives, used to evaluate classification model performance."
+"What is precision in ML?","Precision measures the proportion of predicted positive cases that are actually positive, calculated as true positives divided by all predicted positives."
+"What is recall in ML?","Recall measures the proportion of actual positive cases correctly identified, calculated as true positives divided by all actual positives."
+"What is the F1 score?","The F1 score is the harmonic mean of precision and recall, providing a single metric that balances both measures, especially useful for imbalanced datasets."
+"What is a hyperparameter?","A hyperparameter is a configuration setting set before training begins, such as learning rate, batch size, or number of layers, not learned from data."
+"What is hyperparameter tuning?","Hyperparameter tuning is the process of finding optimal hyperparameter values through methods like grid search, random search, or Bayesian optimization."
+"What is early stopping?","Early stopping halts training when validation performance stops improving for a specified number of epochs, preventing overfitting and saving computational resources."
+"What is a loss function?","A loss function quantifies the difference between predicted and actual values, guiding the optimization process by providing a measure to minimize."
+"What is backpropagation?","Backpropagation is an algorithm that calculates gradients of the loss function with respect to weights by applying the chain rule backward through the network."
+"What is an activation function?","An activation function introduces non-linearity into neural networks, determining whether and how strongly a neuron fires based on its input."
+"What are common activation functions?","Common activation functions include ReLU, sigmoid, tanh, Leaky ReLU, and softmax, each with different properties and use cases."
+"What is a convolutional neural network?","A CNN is a deep learning architecture designed for processing grid-like data such as images, using convolutional layers to detect spatial patterns and features."
+"What is a recurrent neural network?","An RNN processes sequential data by maintaining hidden states that capture information from previous time steps, useful for time series and natural language."
+"What is an LSTM network?","Long Short-Term Memory networks are RNN variants with gating mechanisms that better capture long-term dependencies and mitigate vanishing gradient problems."
+"What is attention mechanism?","Attention allows models to focus on relevant parts of input when generating output, weighing different input elements dynamically rather than treating all equally."
+"What is a transformer architecture?","Transformers use self-attention mechanisms to process sequences in parallel, forming the basis of modern NLP models like BERT, GPT, and others."
+"What is fine-tuning a model?","Fine-tuning involves taking a pre-trained model and continuing training on domain-specific data, adjusting weights to specialize for a particular task."
+"What is gradient clipping?","Gradient clipping limits gradient magnitudes during training to prevent exploding gradients, stabilizing training by capping values at a threshold."
+"What is weight initialization?","Weight initialization sets initial parameter values before training, using strategies like Xavier, He, or random initialization to facilitate effective learning."
+"What is data normalization?","Data normalization scales features to a standard range, typically 0-1 or -1 to 1, improving convergence speed and model stability during training."
+"What is standardization in ML?","Standardization transforms features to have zero mean and unit variance, making them comparable and improving optimization for many algorithms."
+"What is a validation set used for?","A validation set evaluates model performance during training, guides hyperparameter tuning, and helps detect overfitting without touching the test set."
+"What is a test set used for?","A test set provides final, unbiased performance evaluation after all training and tuning is complete, simulating real-world deployment scenarios."
+"What is class imbalance?","Class imbalance occurs when some classes have significantly fewer samples than others, potentially biasing models toward majority classes."
+"How do you handle class imbalance?","Techniques include oversampling minorities, undersampling majorities, synthetic data generation like SMOTE, class weights, or using appropriate evaluation metrics."
+"What is ensemble learning?","Ensemble learning combines multiple models to improve predictions, using techniques like bagging, boosting, or stacking to leverage diverse model strengths."
+"What is bagging in ML?","Bagging trains multiple models on bootstrap samples of data and averages predictions, reducing variance and improving stability, as in Random Forests."
+"What is boosting in ML?","Boosting sequentially trains weak learners, each focusing on examples previous models misclassified, creating a strong ensemble through weighted combination."
+"What is a Random Forest?","Random Forest is an ensemble of decision trees trained on random data subsets with random feature selection, combining predictions for robust results."
+"What is XGBoost?","XGBoost is an efficient gradient boosting implementation using regularization, parallel processing, and tree pruning to achieve high performance on structured data."
+"What is feature scaling?","Feature scaling adjusts the range of features to similar scales, preventing features with larger ranges from dominating distance-based or gradient-based algorithms."
+"What is one-hot encoding?","One-hot encoding converts categorical variables into binary vectors, where each category becomes a column with 1 indicating presence and 0 absence."
+"What is embedding in ML?","Embeddings map discrete items like words or categories into continuous vector spaces, capturing semantic relationships in lower-dimensional representations."
+"What is curriculum learning?","Curriculum learning trains models by presenting examples in meaningful order, starting with easier examples and gradually increasing difficulty for better learning."
+"What is data leakage?","Data leakage occurs when training data contains information about the target that wouldn't be available during prediction, causing inflated performance estimates."
+"What is k-fold cross-validation?","K-fold CV divides data into k equal parts, trains k models using each fold once as validation while others train, then averages results."
+"What is stratified sampling?","Stratified sampling maintains class proportions when splitting data, ensuring each subset has representative distributions of all target classes."
+"What is the vanishing gradient problem?","Vanishing gradients occur when gradients become extremely small in deep networks, preventing effective weight updates in earlier layers during backpropagation."
+"What is the exploding gradient problem?","Exploding gradients occur when gradients become extremely large during training, causing unstable updates and numerical overflow in neural networks."
+"What is batch size in training?","Batch size determines how many samples are processed before updating weights, affecting training speed, memory usage, and convergence behavior."
+"What is an epoch in ML training?","An epoch is one complete pass through the entire training dataset, with models typically trained for multiple epochs until convergence."
+"What is stochastic gradient descent?","SGD updates weights after each training example rather than the full dataset, introducing noise but enabling faster updates and better generalization."
+"What is mini-batch gradient descent?","Mini-batch gradient descent updates weights using small batches of examples, balancing computational efficiency with stable gradient estimates."
+"What is Adam optimizer?","Adam combines momentum and adaptive learning rates, maintaining per-parameter learning rates that adapt based on first and second moment estimates of gradients."
+"What is momentum in optimization?","Momentum accelerates gradient descent by accumulating a velocity vector in directions of persistent gradient reduction, helping overcome local minima."
+"What is learning rate scheduling?","Learning rate scheduling adjusts the learning rate during training, typically decreasing it over time to enable fine-tuning and better convergence."
+"What is a residual connection?","Residual connections add input directly to layer output, allowing gradients to flow through skip connections and enabling training of very deep networks."
+"What is batch vs online learning?","Batch learning trains on entire datasets at once, while online learning updates models incrementally as new data arrives, adapting continuously."
+"What is active learning?","Active learning selectively queries informative examples for labeling, maximizing model improvement while minimizing labeling effort through strategic sample selection."
+"What is semi-supervised learning?","Semi-supervised learning uses both labeled and unlabeled data, leveraging large amounts of cheap unlabeled data alongside limited labeled examples."
+"What is self-supervised learning?","Self-supervised learning creates supervision signals from unlabeled data itself, such as predicting masked words or image rotations, for pre-training."
+"What is reinforcement learning?","Reinforcement learning trains agents through interaction with environments, learning policies that maximize cumulative rewards through trial and error."
+"What is a policy in RL?","A policy defines an agent's behavior, mapping states to actions, and can be deterministic or stochastic depending on the RL approach."
+"What is reward shaping in RL?","Reward shaping modifies reward functions to guide learning more effectively, providing intermediate rewards to encourage desired behaviors and faster learning."
+"What is exploration vs exploitation?","Exploration tries new actions to discover better strategies, while exploitation uses known good actions, balancing both is crucial in RL."
+"What is Q-learning?","Q-learning is a model-free RL algorithm that learns action-value functions, estimating expected returns for state-action pairs to derive optimal policies."
+"What is policy gradient?","Policy gradient methods directly optimize policy parameters by computing gradients of expected rewards, enabling learning of stochastic policies and continuous actions."
+"What is data preprocessing?","Data preprocessing cleans, transforms, and prepares raw data for training, including handling missing values, outliers, scaling, and encoding."
+"What is missing data imputation?","Imputation fills missing values using strategies like mean, median, mode, forward fill, interpolation, or predictive models based on other features."
+"What is feature selection?","Feature selection identifies and retains the most relevant features, reducing dimensionality, improving interpretability, and potentially enhancing model performance."
+"What is model compression?","Model compression reduces model size and computational requirements through techniques like pruning, quantization, knowledge distillation, or low-rank factorization."
+"What is knowledge distillation?","Knowledge distillation trains smaller student models to mimic larger teacher models, transferring learned knowledge while maintaining efficiency."
+"What is quantization in ML?","Quantization reduces numerical precision of weights and activations from floating-point to lower-bit representations, decreasing memory and computation requirements."
+"What is pruning in neural networks?","Pruning removes unnecessary weights or neurons based on importance criteria, creating sparser networks that maintain accuracy with reduced parameters."
+"What is a generative model?","Generative models learn to produce new data samples similar to training data, modeling underlying data distributions for synthesis tasks."
+"What is a discriminative model?","Discriminative models learn decision boundaries between classes, directly modeling conditional probability of outputs given inputs for classification tasks."
+"What is a GAN?","Generative Adversarial Networks consist of generator and discriminator networks competing, with the generator learning to create realistic samples."
+"What is a VAE?","Variational Autoencoders encode data into latent distributions and decode back, learning compressed representations that can generate new samples."
+"What is contrastive learning?","Contrastive learning trains models by pulling similar examples together and pushing dissimilar ones apart in representation space."
+"What is data drift?","Data drift occurs when statistical properties of production data differ from training data, potentially degrading model performance over time."
+"What is model monitoring?","Model monitoring tracks deployed model performance, data quality, and system health, detecting issues like drift, bias, or degradation."
+"What is A/B testing for models?","A/B testing compares model versions by randomly assigning users to different models and measuring business metrics to determine which performs better."
+"What is model versioning?","Model versioning tracks different iterations of models, including code, hyperparameters, and training data, enabling reproducibility and rollback capabilities."
+"What is MLOps?","MLOps applies DevOps principles to ML, establishing practices for deployment, monitoring, versioning, and automation of ML systems in production."
+"What is feature store?","A feature store centralizes feature definitions and serves consistent features for training and inference, ensuring feature reusability and consistency."
+"What is model interpretability?","Model interpretability explains how models make decisions, using techniques like SHAP, LIME, or attention visualization to understand predictions."
+"What is SHAP values?","SHAP values quantify each feature's contribution to individual predictions using game theory, providing unified interpretability across model types."
+"What is model bias?","Model bias occurs when models systematically favor certain groups or outcomes, potentially perpetuating or amplifying societal biases present in training data."
+"What is fairness in ML?","Fairness ensures models treat different groups equitably, measured through metrics like demographic parity, equal opportunity, or equalized odds."
+"What is federated learning?","Federated learning trains models across decentralized devices without centralizing data, preserving privacy by sharing only model updates."
+"What is differential privacy?","Differential privacy adds controlled noise to computations, providing mathematical guarantees that individual data points cannot be identified from model outputs."
+"What is neural architecture search?","NAS automatically discovers optimal network architectures using methods like reinforcement learning, evolution, or gradient-based optimization."
+"What is meta-learning?","Meta-learning trains models to learn how to learn, enabling quick adaptation to new tasks with minimal examples by learning across task distributions."
+"What is few-shot learning?","Few-shot learning trains models to recognize new classes from very few examples, typically using metric learning or meta-learning approaches."

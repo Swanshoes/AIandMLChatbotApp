@@ -7,7 +7,26 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <Folder Include="App_Data\" />
+    <Compile Remove="App_Data\ONNXMiniLM\**" />
+    <Content Remove="App_Data\ONNXMiniLM\**" />
+    <EmbeddedResource Remove="App_Data\ONNXMiniLM\**" />
+    <None Remove="App_Data\ONNXMiniLM\**" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Remove="App_Data\chatbotModel.zip" />
+    <None Remove="App_Data\trainingData.csv" />
+    <None Remove="App_Data\trainingData.csv.txt" />
+    <None Remove="App_Data\vocab.txt" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Content Include="App_Data\chatbotModel.zip">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="App_Data\trainingData.csv">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
   </ItemGroup>
 
   <ItemGroup>
