@@ -22,6 +22,10 @@ namespace AIandMLChatbotApp.Controllers
             if (csvFile == null || csvFile.Length == 0)
                 return Json(new { success = false, message = "No file selected" });
 
+            var ext = Path.GetExtension(csvFile.FileName).ToLower();
+            if (ext != ".csv")
+                return Json(new { success = false, message = "Invalid file type. Please upload a CSV." });
+
             string folder = Path.Combine(AppDomain.CurrentDomain.BaseDirectory, "App_Data");
             if (!Directory.Exists(folder)) Directory.CreateDirectory(folder);
 
