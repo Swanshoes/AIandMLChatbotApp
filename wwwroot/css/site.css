@@ -21,6 +21,7 @@ body {
   margin-bottom: 60px;
 }
 #chatWindow {
+    min-height: 55vh;
     max-height: 400px;
     overflow-y: auto;
     border: 1px solid #ccc;
