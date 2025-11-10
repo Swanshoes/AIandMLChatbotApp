@@ -1,0 +1,9 @@
+1. Project is built as an in-browser App.
+2. Bot can be launched from the Ctrl + F5 within Visual Studio or hitting either play button.
+3. Hit the Chatbot link in banner on top of welcome page.
+4. Upload training data to make certain the model has been built. Training data has been included in root App_Data folder. Either csv will work.
+5. Type questions into the "Ask a question here..." box and hit submit. This will produce an answer from the bot along with a confidence score.
+6. To test the upload function, upload the other set of training questions from App_Data. This should give a "New dataset uploaded and model retrained successfully."
+New questions can then be submitted to the model.
+
+

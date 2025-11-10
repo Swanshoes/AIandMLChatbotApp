@@ -42,10 +42,7 @@ namespace AIandMLChatbotApp.Models
             string modelPath = Path.Combine(folder, "chatbotModel.zip");
             string dataPath = Path.Combine(folder, "trainingData.csv");
             string backupPath = Path.Combine(folder, "chatbotModel_backup.zip");
-            System.Diagnostics.Debug.WriteLine($"Train is using model at: {modelPath}");
-            System.Diagnostics.Debug.WriteLine($"Model exists: {File.Exists(modelPath)}");
-            System.Diagnostics.Debug.WriteLine($"Data Train is using model at: {dataPath}");
-            
+          
 
             if (File.Exists(modelPath))
             {
@@ -108,10 +105,7 @@ namespace AIandMLChatbotApp.Models
                 Directory.CreateDirectory(folder);
 
             string modelPath = Path.Combine(folder, "chatbotModel.zip");
-            System.Diagnostics.Debug.WriteLine($"Predict is using model at: {modelPath}");
-            System.Diagnostics.Debug.WriteLine($"Model exists: {File.Exists(modelPath)}");
-            System.Diagnostics.Debug.WriteLine($"Model last modified: {File.GetLastWriteTimeUtc(modelPath)}");
-
+            
 
             ITransformer loadedModel = mlContext.Model.Load(modelPath, out var modelInputSchema);
             var predEngine = mlContext.Model.CreatePredictionEngine<ChatData, ChatPrediction>(loadedModel);
