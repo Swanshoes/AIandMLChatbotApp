@@ -42,8 +42,17 @@ namespace AIandMLChatbotApp.Controllers
 
                 if (System.IO.File.Exists(finalFilePath))
                     System.IO.File.Copy(finalFilePath, backupFilePath, true);
+                try
+                {
+                    ChatModelTrainer.TrainModel(newFilePath);
+                    System.Diagnostics.Debug.WriteLine($"Model trained");
 
-                ChatModelTrainer.TrainModel(newFilePath);
+                } 
+                catch (Exception ex)
+                {
+                    System.Diagnostics.Debug.WriteLine($"Training error: {ex}");
+
+                }
 
                 System.IO.File.Copy(newFilePath, finalFilePath, true);
                 System.IO.File.Delete(newFilePath);
